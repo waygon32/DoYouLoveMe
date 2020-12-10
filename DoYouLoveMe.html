@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DoYouLoveMe</title>
+</head>
+<body>
+<h1>Do you love me</h1>
+<input type="button" value="yes" onclick="yes()">
+<input id="khong" type="button" value="no" style="position: relative;" onmouseover="no()" >
+
+<script>
+    function yes() {
+        alert("ok");
+    }
+    function no() {
+        document.getElementById("khong").style.left = Math.floor(Math.random()*(window.innerWidth -100) ) +"px"
+        document.getElementById("khong").style.top = Math.floor(Math.random()*(window.innerHeight -100))+"px"
+    }
+</script>
+</body>
+</html>
